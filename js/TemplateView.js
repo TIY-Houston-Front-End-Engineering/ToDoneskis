@@ -30,7 +30,7 @@
             this.loadTemplate(this.options.view || this.view).then(function(fn) {
                 var d = self.model || self.collection;
                 d && (self.el.innerHTML = fn({
-                    data: d.toJSON()
+                    data: d
                 }));
             })
         }
